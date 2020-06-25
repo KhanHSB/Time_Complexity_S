@@ -1,5 +1,8 @@
+#TEST ARRAYS FOR INPUTS
 test = [1,2,3,4,5,5,6,7,8,7,9,6,2,3]
 test2 = [1,2,3,4,5,5,6,7,8,7,9,6,2,3,3,2]
+test_3 = {2: 3, 3: 1, 5: 1, 6: 5, 7: 2}
+
 def create_hashtable(input_list):
     #print("Test_input: ", test2)
     list_of_tuples = {} # empty dictionary to contain a list of tuples ( A number : Index of reptition)
@@ -60,10 +63,6 @@ def find_smallest(input_dict):
         return lowest_value_key            
                         
         
-    
-
-
-
 def firstDuplicate(a):
     dictO = create_hashtable(a)
     smallest = find_smallest(dictO)
